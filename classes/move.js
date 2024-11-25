@@ -1,9 +1,9 @@
 export class Move{
-    constructor(moveName, ammo, damage, status){
+    constructor(moveName, ammo, damage, element){
         this.moveName = moveName;
         this.ammo = ammo;
         this.damage = damage;
-        this.status = status;
+        this.element = element;
     }
     setMoveName(moveName){
         this.moveName = moveName;
@@ -14,8 +14,7 @@ export class Move{
     setDamage(damage){
         this.damage = damage;
     }
-    
-    setStatus(status){
-        this.status = status;
+    setElement(element){
+        this.element = element;
     }
 }

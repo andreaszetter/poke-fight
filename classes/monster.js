@@ -1,10 +1,10 @@
 export class Monster{
-    constructor(monsterName, health, attack){
+    constructor(monsterName, health, attack,element){
         this.monsterName = monsterName;
         this.health = health;
         this.attack = attack;
         this.moveList = [];
-
+        this.element = element;
     }
     setMoveList(moveList){
         
@@ -26,5 +26,8 @@ export class Monster{
     }
     setAttack(attack){
         this.attack = attack;
+    }
+    setElement(element){
+        this.element = element;
     }
 }

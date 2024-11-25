@@ -13,6 +13,12 @@ export class Team{
         this.teamName = teamName;
     }
     addMonster(monster){
-        this.monsters.push(monster)
+        if(this.monsters.length < 6){
+            this.monsters.push(monster);
+        }
+        else{
+            console.log("your team is full");
+        }
     }
+
 }
